@@ -1,49 +1,37 @@
-# Starlight Starter Kit: Basics
+# Brand guidelines
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+A Starlight documentation site with TinaCMS editing.
 
-```
-pnpm create astro@latest -- --template starlight
-```
+## Content
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Documentation lives in `src/content/docs/`:
 
-## 🚀 Project Structure
+- Markdown files are editable in TinaCMS with title, description, and rich-text body fields.
+- `index.mdx` is the documentation home. Its hero and next-step cards are structured Tina fields; its MDX component wrapper remains source-controlled.
+- Starlight continues to generate the public documentation routes from these files.
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+## Local editing
 
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   └── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
+Run the combined TinaCMS and Astro development server:
+
+```sh
+pnpm dev
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+Open `http://localhost:4321/admin/` to edit content. Saving updates the Markdown or MDX source file; regular documentation bodies also update in the Tina preview.
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+TinaCMS generates `tina/__generated__/` and `public/admin/`; neither directory is committed. `pnpm build` uses Tina’s local content API without TinaCloud validation for a credential-free local build.
 
-Static assets, like favicons, can be placed in the `public/` directory.
+For a TinaCloud deployment, provide `NEXT_PUBLIC_TINA_CLIENT_ID` and `TINA_TOKEN` and run `pnpm build:cloud`.
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
+## Commands
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
 | `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
+| `pnpm dev`             | Starts TinaCMS and Astro at `localhost:4321`     |
+| `pnpm build`           | Generates TinaCMS and builds the production site |
+| `pnpm build:cloud`     | Builds against TinaCloud for deployment          |
 | `pnpm preview`         | Preview your build locally, before deploying     |
 | `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).

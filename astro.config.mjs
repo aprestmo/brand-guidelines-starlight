@@ -1,13 +1,21 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import node from '@astrojs/node';
 import starlight from '@astrojs/starlight';
+import tina from '@tinacms/astro/integration';
+import { tinaAdminDevRedirect } from '@tinacms/astro/vite';
 
 // https://astro.build/config
 export default defineConfig({
+	output: 'server',
+	adapter: node({ mode: 'standalone' }),
 	integrations: [
 		starlight({
 			title: 'My Docs',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			components: {
+				MarkdownContent: './src/components/tina/MarkdownContent.astro',
+			},
 			sidebar: [
 				{
 					label: 'Guides',
@@ -22,5 +30,12 @@ export default defineConfig({
 				},
 			],
 		}),
+		tina(),
 	],
+	vite: {
+		plugins: [tinaAdminDevRedirect()],
+		ssr: {
+			noExternal: ['@tinacms/astro', '@tinacms/bridge'],
+		},
+	},
 });

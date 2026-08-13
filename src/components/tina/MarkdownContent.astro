@@ -1,0 +1,22 @@
+---
+import Default from '@astrojs/starlight/components/MarkdownContent.astro';
+import TinaIsland from '@tinacms/astro/TinaIsland.astro';
+import DocBody from './DocBody.astro';
+import { getDoc } from '../../lib/tina/data';
+import { islands } from '../../lib/tina/islands';
+
+const { entry } = Astro.locals.starlightRoute;
+const hasEditableDocument = entry.id !== '' && entry.id !== '404';
+const document = hasEditableDocument ? await getDoc(entry.id) : undefined;
+const data = document?.data?.doc;
+---
+
+{
+	data ? (
+		<TinaIsland name="doc" wrapper={islands.doc.wrapper} params={{ slug: entry.id }} primary>
+			<DocBody data={data} />
+		</TinaIsland>
+	) : (
+		<Default><slot /></Default>
+	)
+}

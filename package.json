@@ -3,15 +3,25 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "tinacms dev -c \"astro dev\"",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "tinacms build --local --skip-cloud-checks -c \"astro build\"",
+    "build:cloud": "tinacms build && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/node": "^11.1.1",
     "@astrojs/starlight": "^0.41.7",
+    "@tinacms/astro": "^0.6.1",
     "astro": "^7.1.6",
-    "sharp": "^0.35.3"
+    "sharp": "^0.35.3",
+    "tinacms": "^3.11.0"
+  },
+  "devDependencies": {
+    "@tinacms/cli": "^2.5.6",
+    "@types/node": "^26.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }

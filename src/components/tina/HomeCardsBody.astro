@@ -1,0 +1,18 @@
+---
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import { tinaField } from '@tinacms/astro/tina-field';
+
+const { data } = Astro.props;
+---
+
+{
+	data?.cards && (
+		<div data-tina-field={tinaField(data, 'cards')}>
+			<CardGrid stagger>
+				{data.cards.map((card) => (
+					<Card title={card.title} icon={card.icon}>{card.body}</Card>
+				))}
+			</CardGrid>
+		</div>
+	)
+}

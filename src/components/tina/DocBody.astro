@@ -1,0 +1,12 @@
+---
+import TinaMarkdown from '@tinacms/astro/TinaMarkdown.astro';
+import { tinaField } from '@tinacms/astro/tina-field';
+
+const { data } = Astro.props;
+---
+
+{data?.body && (
+	<div class="sl-markdown-content" data-tina-field={tinaField(data, 'body')}>
+		<TinaMarkdown content={data.body} />
+	</div>
+)}

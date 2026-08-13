@@ -1,0 +1,17 @@
+---
+import TinaIsland from '@tinacms/astro/TinaIsland.astro';
+import HomeCardsBody from './HomeCardsBody.astro';
+import { getDocsHome } from '../../lib/tina/data';
+import { islands } from '../../lib/tina/islands';
+
+const home = await getDocsHome();
+const data = home.data?.docsHome;
+---
+
+{
+	data && (
+		<TinaIsland name="docsHome" wrapper={islands.docsHome.wrapper} primary>
+			<HomeCardsBody data={data} />
+		</TinaIsland>
+	)
+}
