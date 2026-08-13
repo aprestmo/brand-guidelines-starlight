@@ -1,7 +1,7 @@
 import { requestWithMetadata } from '@tinacms/astro/data';
 import client from '../../../tina/__generated__/client';
 export const getDoc = (relativePath: string) =>
-	requestWithMetadata(client.queries.doc({ relativePath: `${relativePath}.md` }), {
+	requestWithMetadata(client.queries.doc({ relativePath: `${relativePath}.mdx` }), {
 		priority: 'primary',
 	});
 

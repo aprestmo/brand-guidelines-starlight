@@ -37,7 +37,7 @@ export default defineConfig({
         name: "doc",
         label: "Documentation",
         path: "src/content/docs",
-        format: "md",
+        format: "mdx",
         match: {
           exclude: "index",
         },
@@ -188,6 +188,12 @@ export default defineConfig({
                 },
               },
             ],
+          },
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Content",
+            isBody: true,
           },
         ],
       },
