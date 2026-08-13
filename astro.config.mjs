@@ -11,22 +11,27 @@ export default defineConfig({
 	adapter: node({ mode: 'standalone' }),
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Brand Guidelines',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			components: {
 				MarkdownContent: './src/components/tina/MarkdownContent.astro',
 			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Merkevaremanual',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						// Same order as the nav config in the original TinaCMS site.
+						{ slug: 'merkevarestrategi' },
+						{ slug: 'logo' },
+						{ slug: 'farger' },
+						{ slug: 'typografi' },
+						{ slug: 'grid' },
+						{ slug: 'annonse' },
+						{ slug: 'some' },
+						{ slug: 'produktdesign' },
+						{ slug: 'motion' },
+						{ slug: 'video-og-bildemanr' },
 					],
-				},
-				{
-					label: 'Reference',
-					items: [{ autogenerate: { directory: 'reference' } }],
 				},
 			],
 		}),
