@@ -11,10 +11,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/node": "^11.1.1",
     "@astrojs/starlight": "^0.41.7",
     "@tinacms/astro": "^0.6.1",
     "astro": "^7.1.6",
+    "astro-aws-amplify": "^0.6.0",
     "sharp": "^0.35.3",
     "tinacms": "^3.11.0"
   },

@@ -24,6 +24,20 @@ TinaCMS generates `tina/__generated__/` and `public/admin/`; neither directory i
 
 For a TinaCloud deployment, provide `NEXT_PUBLIC_TINA_CLIENT_ID` and `TINA_TOKEN` and run `pnpm build:cloud`.
 
+## Deployment
+
+This project is set up to deploy to [AWS Amplify Hosting](https://aws.amazon.com/amplify/) using the community [`astro-aws-amplify`](https://github.com/alexnguyennz/astro-aws-amplify) adapter (`output: 'server'` in `astro.config.mjs`), the same platform the original TinaCMS site was hosted on.
+
+1. Run `pnpm add astro-aws-amplify` locally once to install the adapter and update `pnpm-lock.yaml` (it's declared in `package.json`, but the lockfile needs regenerating on a real install — this repo's sandboxed environment couldn't reach the npm registry to do it). Commit the updated lockfile.
+2. In the Amplify Console, create a Hosting app connected to this repository. Amplify picks up the `amplify.yml` at the repo root automatically.
+3. Amplify defaults to Node.js 16, which this adapter doesn't support (it needs Node 22.12+). Under **App settings → Environment variables**, add:
+   ```
+   _CUSTOM_IMAGE=amplify:al2023
+   ```
+4. Deploy. Amplify builds with `pnpm run build` (which runs `tinacms build --local --skip-cloud-checks -c "astro build"`) and serves the `.amplify-hosting` output directory.
+
+Known limitation: Starlight's built-in 404 page is prerendered to static HTML by default, but Amplify's SSR catch-all fallback expects a server-rendered 404 to work correctly (see the adapter's [404 Pages](https://github.com/alexnguyennz/astro-aws-amplify#404-pages) note). Genuinely broken links may not show Starlight's styled 404 page until this is addressed with a custom server-rendered `404.astro`.
+
 ## Commands
 
 | Command                   | Action                                           |
