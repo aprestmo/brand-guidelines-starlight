@@ -8,11 +8,16 @@ import { tinaAdminDevRedirect } from '@tinacms/astro/vite';
 // https://astro.build/config
 export default defineConfig({
 	output: 'server',
-	adapter: node({ mode: 'standalone' }),
+  adapter: node({ mode: 'standalone' }),
 	integrations: [
 		starlight({
-			title: 'Brand Guidelines',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+      title: 'Brand Guidelines',
+      locales: {
+        root: {
+          label: 'yo',
+          lang: 'nb-NO',
+        }
+      },
 			components: {
 				MarkdownContent: './src/components/tina/MarkdownContent.astro',
 			},
@@ -30,7 +35,7 @@ export default defineConfig({
 						{ slug: 'some' },
 						{ slug: 'produktdesign' },
 						{ slug: 'motion' },
-						{ slug: 'video-og-bildemanr' },
+						{ slug: 'video-og-bildemaner' },
 					],
 				},
 			],
