@@ -1,12 +1,18 @@
 ---
 import TinaMarkdown from '@tinacms/astro/TinaMarkdown.astro';
+import type { CustomComponentsMap } from '@tinacms/astro/types';
 import { tinaField } from '@tinacms/astro/tina-field';
+import ColorTokensEmbed from './ColorTokensEmbed.astro';
 
 const { data } = Astro.props;
+
+const components: CustomComponentsMap = {
+	color_tokens_embed: ColorTokensEmbed,
+};
 ---
 
 {data?.body && (
 	<div class="sl-markdown-content" data-tina-field={tinaField(data, 'body')}>
-		<TinaMarkdown content={data.body} />
+		<TinaMarkdown content={data.body} components={components} />
 	</div>
 )}

@@ -14,7 +14,7 @@ export default defineConfig({
       title: 'Brand Guidelines',
       locales: {
         root: {
-          label: 'yo',
+          label: 'Norsk bokmål',
           lang: 'nb-NO',
         }
       },

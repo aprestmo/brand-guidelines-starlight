@@ -1,0 +1,98 @@
+---
+/**
+ * Vanilla Astro-rendering av "Fargevariabler"-embedet (color-tokens-embed).
+ * Ingen React/klientrammeverk — dette kompileres til ren, statisk HTML akkurat
+ * som resten av Starlight-siden. Speiler ColorTokensCard fra brand-guidelines,
+ * men uten client-side fetch/hydrering: tokens hentes server-side (denne appen
+ * kjører SSR) med fallback til en bundlet snapshot, se src/lib/colorTokens.ts.
+ */
+import {
+	expandVariableLines,
+	resolveTokens,
+	toNorwegianDateTime,
+	tokensGeneratedAt as bundledGeneratedAt,
+} from "../../lib/colorTokens";
+
+interface Props {
+	title?: string;
+	variableLines?: string;
+	whiteTextFromItem?: number | string | null;
+}
+
+const { title, variableLines, whiteTextFromItem } = Astro.props;
+
+const { tokensByName: lookup, tokensGeneratedAt } = await resolveTokens();
+const list = expandVariableLines(variableLines, lookup);
+const resolvedGeneratedAt = tokensGeneratedAt ?? bundledGeneratedAt;
+
+const fromItem =
+	whiteTextFromItem != null && Number(whiteTextFromItem) > 0
+		? Number(whiteTextFromItem)
+		: null;
+---
+
+<div class="color-tokens-embed">
+	{title ? <p class="title">{title}</p> : null}
+	{list.length > 0 ? (
+		<ul class="list">
+			{list.map(({ variableName, label, value }, index) => {
+				const useWhiteText = fromItem != null && index >= fromItem - 1;
+				return (
+					<li
+						class="list-item"
+						style={`background-color:${value};color:${useWhiteText ? "white" : "black"};`}
+					>
+						<span>{label}</span>
+						<span>{value}</span>
+					</li>
+				);
+			})}
+		</ul>
+	) : (
+		<p class="empty">Ingen variabler funnet for dette utvalget.</p>
+	)}
+	{resolvedGeneratedAt ? (
+		<p class="meta">
+			<span class="meta-label">Sist oppdatert:</span>{" "}
+			<time datetime={resolvedGeneratedAt}>{toNorwegianDateTime(resolvedGeneratedAt)}</time>
+		</p>
+	) : null}
+</div>
+
+<style>
+	.color-tokens-embed > * + * {
+		margin-block-start: 1em;
+	}
+
+	.title {
+		font-weight: 600;
+	}
+
+	.list {
+		list-style-type: none;
+		padding-left: 0;
+		margin: 0;
+	}
+
+	.list-item {
+		font-variant-numeric: tabular-nums;
+		display: flex;
+		justify-content: space-between;
+		padding: 0.75rem 1rem;
+	}
+
+	.empty {
+		color: var(--sl-color-gray-3, #767676);
+	}
+
+	.meta {
+		color: var(--sl-color-gray-3, #767676);
+		font-size: 0.875rem;
+	}
+
+	.meta-label {
+		font-size: 0.85em;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+	}
+</style>

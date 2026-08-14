@@ -1,0 +1,1913 @@
+{
+  "generatedAt": "Wed, 29 Apr 2026 11:51:29 GMT",
+  "tokens": [
+    {
+      "name": "--color-neutral-0",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-neutral-50",
+      "value": "#f4f4f6"
+    },
+    {
+      "name": "--color-neutral-100",
+      "value": "#e4e5e7"
+    },
+    {
+      "name": "--color-neutral-200",
+      "value": "#d1d3d6"
+    },
+    {
+      "name": "--color-neutral-300",
+      "value": "#c1c3c8"
+    },
+    {
+      "name": "--color-neutral-400",
+      "value": "#a0a5ac"
+    },
+    {
+      "name": "--color-neutral-500",
+      "value": "#858b94"
+    },
+    {
+      "name": "--color-neutral-600",
+      "value": "#6b717a"
+    },
+    {
+      "name": "--color-neutral-700",
+      "value": "#53555f"
+    },
+    {
+      "name": "--color-neutral-800",
+      "value": "#363a3f"
+    },
+    {
+      "name": "--color-neutral-900",
+      "value": "#232528"
+    },
+    {
+      "name": "--color-brand-utility-0",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-brand-utility-50",
+      "value": "#edf1f8"
+    },
+    {
+      "name": "--color-brand-utility-100",
+      "value": "#d8e2f2"
+    },
+    {
+      "name": "--color-brand-utility-200",
+      "value": "#a6b8d8"
+    },
+    {
+      "name": "--color-brand-utility-300",
+      "value": "#879cc1"
+    },
+    {
+      "name": "--color-brand-utility-400",
+      "value": "#5b729b"
+    },
+    {
+      "name": "--color-brand-utility-500",
+      "value": "#3d5279"
+    },
+    {
+      "name": "--color-brand-utility-600",
+      "value": "#283c62"
+    },
+    {
+      "name": "--color-brand-utility-700",
+      "value": "#13264a"
+    },
+    {
+      "name": "--color-brand-utility-800",
+      "value": "#010e29"
+    },
+    {
+      "name": "--color-brand-utility-900",
+      "value": "#000716"
+    },
+    {
+      "name": "--color-brand-primary",
+      "value": "#13264a"
+    },
+    {
+      "name": "--color-brand-secondary",
+      "value": "#edf1f8"
+    },
+    {
+      "name": "--color-brand-highlight",
+      "value": "#edfeb2"
+    },
+    {
+      "name": "--color-brand-primary-fg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-link-default",
+      "value": "#1c5bc1"
+    },
+    {
+      "name": "--color-link-hover",
+      "value": "#0e2d60"
+    },
+    {
+      "name": "--color-link-active",
+      "value": "#0b244d"
+    },
+    {
+      "name": "--color-link-underline",
+      "value": "rgba(28, 91, 193, 0.3)"
+    },
+    {
+      "name": "--color-typography-default",
+      "value": "#232528"
+    },
+    {
+      "name": "--color-typography-secondary",
+      "value": "#53555f"
+    },
+    {
+      "name": "--color-typography-inverted",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "--color-page-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-page-bg-subtle",
+      "value": "#f4f4f6"
+    },
+    {
+      "name": "--color-page-divider",
+      "value": "#e4e5e7"
+    },
+    {
+      "name": "--color-page-inverted-divider",
+      "value": "rgba(255, 255, 255, 0.3)"
+    },
+    {
+      "name": "--color-header-logo-primary",
+      "value": "#13264a"
+    },
+    {
+      "name": "--color-header-logo-secondary",
+      "value": "#13264a"
+    },
+    {
+      "name": "--color-header-logo-tertiary",
+      "value": "#13264a"
+    },
+    {
+      "name": "--color-header-top-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-header-top-fg",
+      "value": "#13264a"
+    },
+    {
+      "name": "--color-header-top-divider",
+      "value": "#e4e5ea"
+    },
+    {
+      "name": "--color-header-top-subtle-fg",
+      "value": "#5b729b"
+    },
+    {
+      "name": "--color-utility-error",
+      "value": "#af3333"
+    },
+    {
+      "name": "--color-utility-error-fg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-utility-success-dark",
+      "value": "#237070"
+    },
+    {
+      "name": "--color-utility-success-light",
+      "value": "#c9f2e1"
+    },
+    {
+      "name": "--color-utility-success-fg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-utility-functional",
+      "value": "#c6d8ff"
+    },
+    {
+      "name": "--color-utility-functional-fg",
+      "value": "#232528"
+    },
+    {
+      "name": "--color-utility-warning",
+      "value": "#ffcc33"
+    },
+    {
+      "name": "--color-utility-warning-fg",
+      "value": "#232528"
+    },
+    {
+      "name": "--color-advertising-native-bg",
+      "value": "#f4f4f6"
+    },
+    {
+      "name": "--color-advertising-banner-bg",
+      "value": "#f4f4f6"
+    },
+    {
+      "name": "--color-advertising-promo-bg",
+      "value": "#13264a"
+    },
+    {
+      "name": "--color-teaser-standard-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-teaser-standard-fg",
+      "value": "#232528"
+    },
+    {
+      "name": "--color-teaser-standard-subtle-fg",
+      "value": "#858b94"
+    },
+    {
+      "name": "--color-teaser-standard-highlight-fg",
+      "value": "#232528"
+    },
+    {
+      "name": "--color-teaser-standard-divider",
+      "value": "#e4e5e7"
+    },
+    {
+      "name": "--color-teaser-brand-bg",
+      "value": "#13264a"
+    },
+    {
+      "name": "--color-teaser-brand-fg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-teaser-brand-subtle-fg",
+      "value": "#a6b8d8"
+    },
+    {
+      "name": "--color-teaser-brand-highlight-fg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-teaser-brand-divider",
+      "value": "#28374c"
+    },
+    {
+      "name": "--color-teaser-inverted-bg",
+      "value": "#1a1f27"
+    },
+    {
+      "name": "--color-teaser-inverted-fg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-teaser-inverted-subtle-fg",
+      "value": "#879cc1"
+    },
+    {
+      "name": "--color-teaser-inverted-highlight-fg",
+      "value": "#edfeb2"
+    },
+    {
+      "name": "--color-teaser-inverted-divider",
+      "value": "#353c46"
+    },
+    {
+      "name": "--color-teaser-highlight-bg",
+      "value": "#edfeb2"
+    },
+    {
+      "name": "--color-teaser-highlight-fg",
+      "value": "#232528"
+    },
+    {
+      "name": "--color-teaser-highlight-subtle-fg",
+      "value": "#6b744d"
+    },
+    {
+      "name": "--color-teaser-highlight-highlight-fg",
+      "value": "#232528"
+    },
+    {
+      "name": "--color-teaser-highlight-divider",
+      "value": "#d3dead"
+    },
+    {
+      "name": "--color-teaser-opinion-bg",
+      "value": "#f9f2ef"
+    },
+    {
+      "name": "--color-teaser-opinion-fg",
+      "value": "#232528"
+    },
+    {
+      "name": "--color-teaser-opinion-subtle-fg",
+      "value": "#7c6b65"
+    },
+    {
+      "name": "--color-teaser-opinion-highlight-fg",
+      "value": "#533b31"
+    },
+    {
+      "name": "--color-teaser-opinion-divider",
+      "value": "#b9b5b3"
+    },
+    {
+      "name": "--color-teaser-native-ad-bg",
+      "value": "#f4f4f6"
+    },
+    {
+      "name": "--color-teaser-native-ad-fg",
+      "value": "#232528"
+    },
+    {
+      "name": "--color-teaser-native-ad-subtle-fg",
+      "value": "#53555f"
+    },
+    {
+      "name": "--color-teaser-native-ad-highlight-fg",
+      "value": "#53555f"
+    },
+    {
+      "name": "--color-teaser-native-ad-divider",
+      "value": "#d1d3d6"
+    },
+    {
+      "name": "--color-teaser-feature-bg",
+      "value": "#1a1f27"
+    },
+    {
+      "name": "--color-teaser-feature-fg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-teaser-feature-subtle-fg",
+      "value": "#879cc1"
+    },
+    {
+      "name": "--color-teaser-feature-highlight-fg",
+      "value": "#edfeb2"
+    },
+    {
+      "name": "--color-teaser-feature-divider",
+      "value": "#353c46"
+    },
+    {
+      "name": "--color-teaser-brand-secondary-bg",
+      "value": "#edf1f8"
+    },
+    {
+      "name": "--color-teaser-brand-secondary-fg",
+      "value": "#000716"
+    },
+    {
+      "name": "--color-teaser-brand-secondary-subtle-fg",
+      "value": "#5b729b"
+    },
+    {
+      "name": "--color-teaser-brand-secondary-highlight-fg",
+      "value": "#1c5bc1"
+    },
+    {
+      "name": "--color-teaser-brand-secondary-divider",
+      "value": "#d8e2f2"
+    },
+    {
+      "name": "--color-teaser-standard-card-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-teaser-standard-card-fg",
+      "value": "#232528"
+    },
+    {
+      "name": "--color-teaser-standard-card-subtle-fg",
+      "value": "#858b94"
+    },
+    {
+      "name": "--color-teaser-standard-card-highlight-fg",
+      "value": "#232528"
+    },
+    {
+      "name": "--color-teaser-standard-card-divider",
+      "value": "#e4e5e7"
+    },
+    {
+      "name": "--color-ui-factbox-bg",
+      "value": "#f9f2ef"
+    },
+    {
+      "name": "--color-ui-factbox-fg",
+      "value": "#232528"
+    },
+    {
+      "name": "--color-ui-factbox-subtle-fg",
+      "value": "#96837d"
+    },
+    {
+      "name": "--color-ui-factbox-divider",
+      "value": "#e8ddd8"
+    },
+    {
+      "name": "--color-ui-factbox-border",
+      "value": "#f9f2ef"
+    },
+    {
+      "name": "--color-ui-generic-bg",
+      "value": "#edf1f8"
+    },
+    {
+      "name": "--color-ui-generic-fg",
+      "value": "#232528"
+    },
+    {
+      "name": "--color-ui-generic-subtle-fg",
+      "value": "#879cc1"
+    },
+    {
+      "name": "--color-ui-generic-divider",
+      "value": "#cad5e9"
+    },
+    {
+      "name": "--color-ui-generic-dark-bg",
+      "value": "#000716"
+    },
+    {
+      "name": "--color-ui-generic-dark-fg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-ui-generic-dark-subtle-fg",
+      "value": "#879cc1"
+    },
+    {
+      "name": "--color-ui-generic-dark-divider",
+      "value": "#13264a"
+    },
+    {
+      "name": "--color-button-primary-default-bg",
+      "value": "#13264a"
+    },
+    {
+      "name": "--color-button-primary-default-fg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-button-primary-default-border",
+      "value": "#13264a"
+    },
+    {
+      "name": "--color-button-primary-hover-bg",
+      "value": "#283c62"
+    },
+    {
+      "name": "--color-button-primary-hover-fg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-button-primary-hover-border",
+      "value": "#283c62"
+    },
+    {
+      "name": "--color-button-primary-active-bg",
+      "value": "#000716"
+    },
+    {
+      "name": "--color-button-primary-active-fg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-button-primary-active-border",
+      "value": "#000716"
+    },
+    {
+      "name": "--color-button-primary-disabled-bg",
+      "value": "#a0a5ac"
+    },
+    {
+      "name": "--color-button-primary-disabled-fg",
+      "value": "#363a3f"
+    },
+    {
+      "name": "--color-button-primary-disabled-border",
+      "value": "#a0a5ac"
+    },
+    {
+      "name": "--color-button-secondary-default-bg",
+      "value": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "name": "--color-button-secondary-default-fg",
+      "value": "#13264a"
+    },
+    {
+      "name": "--color-button-secondary-default-border",
+      "value": "rgba(19, 38, 74, 0.3)"
+    },
+    {
+      "name": "--color-button-secondary-disabled-bg",
+      "value": "rgba(19, 38, 74, 0)"
+    },
+    {
+      "name": "--color-button-secondary-disabled-fg",
+      "value": "#a0a5ac"
+    },
+    {
+      "name": "--color-button-secondary-disabled-border",
+      "value": "#a0a5ac"
+    },
+    {
+      "name": "--color-button-secondary-hover-bg",
+      "value": "rgba(19, 38, 74, 0.1)"
+    },
+    {
+      "name": "--color-button-secondary-hover-fg",
+      "value": "#010e29"
+    },
+    {
+      "name": "--color-button-secondary-hover-border",
+      "value": "rgba(59, 114, 215, 0.15)"
+    },
+    {
+      "name": "--color-button-secondary-active-bg",
+      "value": "rgba(19, 38, 74, 0.2)"
+    },
+    {
+      "name": "--color-button-secondary-active-fg",
+      "value": "#010e29"
+    },
+    {
+      "name": "--color-button-secondary-active-border",
+      "value": "rgba(59, 114, 215, 0.3)"
+    },
+    {
+      "name": "--color-button-primary-inverted-default-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-button-primary-inverted-default-fg",
+      "value": "#000716"
+    },
+    {
+      "name": "--color-button-primary-inverted-default-border",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-button-primary-inverted-hover-bg",
+      "value": "rgba(255, 255, 255, 0.8)"
+    },
+    {
+      "name": "--color-button-primary-inverted-hover-fg",
+      "value": "#000716"
+    },
+    {
+      "name": "--color-button-primary-inverted-hover-border",
+      "value": "rgba(255, 255, 255, 0.8)"
+    },
+    {
+      "name": "--color-button-primary-inverted-active-bg",
+      "value": "rgba(255, 255, 255, 0.6)"
+    },
+    {
+      "name": "--color-button-primary-inverted-active-fg",
+      "value": "#000716"
+    },
+    {
+      "name": "--color-button-primary-inverted-active-border",
+      "value": "rgba(255, 255, 255, 0.6)"
+    },
+    {
+      "name": "--color-button-primary-inverted-disabled-bg",
+      "value": "#a0a5ac"
+    },
+    {
+      "name": "--color-button-primary-inverted-disabled-fg",
+      "value": "#53555f"
+    },
+    {
+      "name": "--color-button-primary-inverted-disabled-border",
+      "value": "#a0a5ac"
+    },
+    {
+      "name": "--color-button-secondary-inverted-default-bg",
+      "value": "rgba(255, 255, 255, 0)"
+    },
+    {
+      "name": "--color-button-secondary-inverted-default-fg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-button-secondary-inverted-default-border",
+      "value": "rgba(255, 255, 255, 0.3)"
+    },
+    {
+      "name": "--color-button-secondary-inverted-disabled-bg",
+      "value": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "name": "--color-button-secondary-inverted-disabled-fg",
+      "value": "#858b94"
+    },
+    {
+      "name": "--color-button-secondary-inverted-disabled-border",
+      "value": "rgba(255, 255, 255, 0.3)"
+    },
+    {
+      "name": "--color-button-secondary-inverted-hover-bg",
+      "value": "rgba(255, 255, 255, 0.15)"
+    },
+    {
+      "name": "--color-button-secondary-inverted-hover-fg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-button-secondary-inverted-hover-border",
+      "value": "rgba(255, 255, 255, 0.3)"
+    },
+    {
+      "name": "--color-button-secondary-inverted-active-fg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-button-secondary-inverted-active-bg",
+      "value": "rgba(255, 255, 255, 0.3)"
+    },
+    {
+      "name": "--color-button-secondary-inverted-active-border",
+      "value": "rgba(255, 255, 255, 0.3)"
+    },
+    {
+      "name": "--color-button-tag-bg",
+      "value": "#edf1f8"
+    },
+    {
+      "name": "--color-button-tag-fg",
+      "value": "#232528"
+    },
+    {
+      "name": "--color-button-tag-bg-hover",
+      "value": "#d8e2f2"
+    },
+    {
+      "name": "--color-footer-bg",
+      "value": "#13264a"
+    },
+    {
+      "name": "--color-footer-bg-copyright",
+      "value": "#010e29"
+    },
+    {
+      "name": "--color-footer-fg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-footer-divider",
+      "value": "#3d5279"
+    },
+    {
+      "name": "--color-footer-subtle-fg",
+      "value": "#d8e2f2"
+    },
+    {
+      "name": "--color-footer-logo-primary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-footer-logo-secondary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-footer-logo-tertiary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-usermenu-bg",
+      "value": "#13264a"
+    },
+    {
+      "name": "--color-usermenu-fg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-usermenu-divider",
+      "value": "#3d5279"
+    },
+    {
+      "name": "--color-usermenu-subtle-fg",
+      "value": "#a6b8d8"
+    },
+    {
+      "name": "--color-hamburgermenu-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-hamburgermenu-fg",
+      "value": "#13264a"
+    },
+    {
+      "name": "--color-hamburgermenu-divider",
+      "value": "#e4e5ea"
+    },
+    {
+      "name": "--color-hamburgermenu-subtle-fg",
+      "value": "#5b729b"
+    },
+    {
+      "name": "--color-dngroup-inverse-bg",
+      "value": "#042825"
+    },
+    {
+      "name": "--color-dngroup-inverse-fg",
+      "value": "#ecf3f2"
+    },
+    {
+      "name": "--color-dngroup-inverse-subtle-fg",
+      "value": "#b7cac9"
+    },
+    {
+      "name": "--color-dngroup-inverse-divider",
+      "value": "#495a58"
+    },
+    {
+      "name": "--color-dngroup-inverse-highlight",
+      "value": "#e2ffb4"
+    },
+    {
+      "name": "--color-dngroup-standard-bg",
+      "value": "#ecf3f2"
+    },
+    {
+      "name": "--color-dngroup-standard-fg",
+      "value": "#042825"
+    },
+    {
+      "name": "--color-dngroup-standard-subtle-fg",
+      "value": "#495a58"
+    },
+    {
+      "name": "--color-dngroup-standard-divider",
+      "value": "#b7cac9"
+    },
+    {
+      "name": "--color-dngroup-standard-highlight",
+      "value": "#495a58"
+    },
+    {
+      "name": "--color-investor-positive-fg",
+      "value": "#60e6b4"
+    },
+    {
+      "name": "--color-investor-negative-fg",
+      "value": "#ff8993"
+    },
+    {
+      "name": "--color-investor-bg",
+      "value": "#11151d"
+    },
+    {
+      "name": "--color-investor-positive-bg",
+      "value": "#2a8e76"
+    },
+    {
+      "name": "--color-investor-fg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--color-investor-negative-bg",
+      "value": "#c93d57"
+    },
+    {
+      "name": "--color-data-index-1",
+      "value": "#004c77"
+    },
+    {
+      "name": "--color-data-index-2",
+      "value": "#45b7c1"
+    },
+    {
+      "name": "--color-data-index-3",
+      "value": "#c33321"
+    },
+    {
+      "name": "--color-data-index-4",
+      "value": "#f3ad6a"
+    },
+    {
+      "name": "--color-data-index-5",
+      "value": "#6e96df"
+    },
+    {
+      "name": "--color-data-index-6",
+      "value": "#36867a"
+    },
+    {
+      "name": "--color-data-index-7",
+      "value": "#a0336b"
+    },
+    {
+      "name": "--color-data-index-8",
+      "value": "#5049a1"
+    },
+    {
+      "name": "--color-data-bg",
+      "value": "#f9f2f0"
+    },
+    {
+      "name": "--color-data-fg",
+      "value": "#232528"
+    },
+    {
+      "name": "--color-data-subtle-fg",
+      "value": "#89786f"
+    },
+    {
+      "name": "--color-data-divider",
+      "value": "#ead6d1"
+    },
+    {
+      "name": "--typography-editorial-titlepiece-min-font-family",
+      "value": "Sharp Grotesk Semibold"
+    },
+    {
+      "name": "--typography-editorial-titlepiece-min-line-height",
+      "value": "120%"
+    },
+    {
+      "name": "--typography-editorial-titlepiece-min-font-size",
+      "value": "30px"
+    },
+    {
+      "name": "--typography-editorial-titlepiece-min-font-weight",
+      "value": "23"
+    },
+    {
+      "name": "--typography-editorial-titlepiece-max-line-height",
+      "value": "122%"
+    },
+    {
+      "name": "--typography-editorial-titlepiece-max-font-weight",
+      "value": "23"
+    },
+    {
+      "name": "--typography-editorial-titlepiece-max-font-size",
+      "value": "48px"
+    },
+    {
+      "name": "--typography-editorial-titlepiece-max-font-family",
+      "value": "Sharp Grotesk Semibold"
+    },
+    {
+      "name": "--typography-editorial-titlepiece-stylized-min-font-weight",
+      "value": "500"
+    },
+    {
+      "name": "--typography-editorial-titlepiece-stylized-min-line-height",
+      "value": "110%"
+    },
+    {
+      "name": "--typography-editorial-titlepiece-stylized-min-font-size",
+      "value": "32px"
+    },
+    {
+      "name": "--typography-editorial-titlepiece-stylized-min-font-family",
+      "value": "Ivar Headline"
+    },
+    {
+      "name": "--typography-editorial-titlepiece-stylized-max-font-family",
+      "value": "Ivar Headline"
+    },
+    {
+      "name": "--typography-editorial-titlepiece-stylized-max-line-height",
+      "value": "110%"
+    },
+    {
+      "name": "--typography-editorial-titlepiece-stylized-max-font-size",
+      "value": "64px"
+    },
+    {
+      "name": "--typography-editorial-titlepiece-stylized-max-font-weight",
+      "value": "500"
+    },
+    {
+      "name": "--typography-editorial-lead-min-font-family",
+      "value": "Ivar Text"
+    },
+    {
+      "name": "--typography-editorial-lead-min-font-size",
+      "value": "20px"
+    },
+    {
+      "name": "--typography-editorial-lead-min-font-weight",
+      "value": "500"
+    },
+    {
+      "name": "--typography-editorial-lead-min-line-height",
+      "value": "130%"
+    },
+    {
+      "name": "--typography-editorial-lead-max-font-family",
+      "value": "Ivar Text"
+    },
+    {
+      "name": "--typography-editorial-lead-max-font-weight",
+      "value": "500"
+    },
+    {
+      "name": "--typography-editorial-lead-max-line-height",
+      "value": "130%"
+    },
+    {
+      "name": "--typography-editorial-lead-max-font-size",
+      "value": "24px"
+    },
+    {
+      "name": "--typography-editorial-subhead-min-line-height",
+      "value": "130%"
+    },
+    {
+      "name": "--typography-editorial-subhead-min-font-size",
+      "value": "20px"
+    },
+    {
+      "name": "--typography-editorial-subhead-min-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-editorial-subhead-min-font-family",
+      "value": "Sharp Grotesk Medium"
+    },
+    {
+      "name": "--typography-editorial-subhead-max-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-editorial-subhead-max-line-height",
+      "value": "130%"
+    },
+    {
+      "name": "--typography-editorial-subhead-max-font-size",
+      "value": "24px"
+    },
+    {
+      "name": "--typography-editorial-subhead-max-font-family",
+      "value": "Sharp Grotesk Medium"
+    },
+    {
+      "name": "--typography-editorial-body-min-line-height",
+      "value": "155%"
+    },
+    {
+      "name": "--typography-editorial-body-min-font-size",
+      "value": "19px"
+    },
+    {
+      "name": "--typography-editorial-body-min-font-weight",
+      "value": "400"
+    },
+    {
+      "name": "--typography-editorial-body-min-font-family",
+      "value": "Ivar Text"
+    },
+    {
+      "name": "--typography-editorial-body-max-font-family",
+      "value": "Ivar Text"
+    },
+    {
+      "name": "--typography-editorial-body-max-line-height",
+      "value": "150%"
+    },
+    {
+      "name": "--typography-editorial-body-max-font-size",
+      "value": "20px"
+    },
+    {
+      "name": "--typography-editorial-body-max-font-weight",
+      "value": "400"
+    },
+    {
+      "name": "--typography-editorial-quote-min-font-family",
+      "value": "Ivar Headline"
+    },
+    {
+      "name": "--typography-editorial-quote-min-font-weight",
+      "value": "600"
+    },
+    {
+      "name": "--typography-editorial-quote-min-font-size",
+      "value": "30px"
+    },
+    {
+      "name": "--typography-editorial-quote-min-line-height",
+      "value": "120%"
+    },
+    {
+      "name": "--typography-editorial-quote-max-font-family",
+      "value": "Ivar Headline"
+    },
+    {
+      "name": "--typography-editorial-quote-max-font-weight",
+      "value": "500"
+    },
+    {
+      "name": "--typography-editorial-quote-max-font-size",
+      "value": "40px"
+    },
+    {
+      "name": "--typography-editorial-quote-max-line-height",
+      "value": "110%"
+    },
+    {
+      "name": "--typography-editorial-infobox-body-min-font-family",
+      "value": "Inter"
+    },
+    {
+      "name": "--typography-editorial-infobox-body-min-font-weight",
+      "value": "400"
+    },
+    {
+      "name": "--typography-editorial-infobox-body-min-font-size",
+      "value": "14px"
+    },
+    {
+      "name": "--typography-editorial-infobox-body-min-line-height",
+      "value": "150%"
+    },
+    {
+      "name": "--typography-editorial-infobox-body-max-font-family",
+      "value": "Inter"
+    },
+    {
+      "name": "--typography-editorial-infobox-body-max-font-weight",
+      "value": "400"
+    },
+    {
+      "name": "--typography-editorial-infobox-body-max-font-size",
+      "value": "16px"
+    },
+    {
+      "name": "--typography-editorial-infobox-body-max-line-height",
+      "value": "150%"
+    },
+    {
+      "name": "--typography-editorial-infobox-title-min-font-family",
+      "value": "Sharp Grotesk Medium"
+    },
+    {
+      "name": "--typography-editorial-infobox-title-min-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-editorial-infobox-title-min-font-size",
+      "value": "20px"
+    },
+    {
+      "name": "--typography-editorial-infobox-title-min-line-height",
+      "value": "130%"
+    },
+    {
+      "name": "--typography-editorial-infobox-title-max-font-family",
+      "value": "Sharp Grotesk Medium"
+    },
+    {
+      "name": "--typography-editorial-infobox-title-max-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-editorial-infobox-title-max-font-size",
+      "value": "20px"
+    },
+    {
+      "name": "--typography-editorial-infobox-title-max-line-height",
+      "value": "130%"
+    },
+    {
+      "name": "--typography-editorial-table-min-font-family",
+      "value": "Inter Tight"
+    },
+    {
+      "name": "--typography-editorial-table-min-font-weight",
+      "value": "400"
+    },
+    {
+      "name": "--typography-editorial-table-min-line-height",
+      "value": "150%"
+    },
+    {
+      "name": "--typography-editorial-table-min-font-size",
+      "value": "14px"
+    },
+    {
+      "name": "--typography-editorial-table-min-letter-spacing",
+      "value": "0.2px"
+    },
+    {
+      "name": "--typography-editorial-table-max-font-weight",
+      "value": "400"
+    },
+    {
+      "name": "--typography-editorial-table-max-font-size",
+      "value": "16px"
+    },
+    {
+      "name": "--typography-editorial-table-max-line-height",
+      "value": "150%"
+    },
+    {
+      "name": "--typography-editorial-table-max-font-family",
+      "value": "Inter Tight"
+    },
+    {
+      "name": "--typography-editorial-table-max-letter-spacing",
+      "value": "0.2px"
+    },
+    {
+      "name": "--typography-editorial-lead-stylized-min-font-family",
+      "value": "Sharp Grotesk Book"
+    },
+    {
+      "name": "--typography-editorial-lead-stylized-min-font-size",
+      "value": "16px"
+    },
+    {
+      "name": "--typography-editorial-lead-stylized-min-line-height",
+      "value": "130%"
+    },
+    {
+      "name": "--typography-editorial-lead-stylized-min-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-editorial-lead-stylized-max-font-family",
+      "value": "Sharp Grotesk Book"
+    },
+    {
+      "name": "--typography-editorial-lead-stylized-max-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-editorial-lead-stylized-max-line-height",
+      "value": "150%"
+    },
+    {
+      "name": "--typography-editorial-lead-stylized-max-font-size",
+      "value": "24px"
+    },
+    {
+      "name": "--typography-utility-topic-font-family",
+      "value": "Inter"
+    },
+    {
+      "name": "--typography-utility-topic-font-weight",
+      "value": "400"
+    },
+    {
+      "name": "--typography-utility-topic-font-size",
+      "value": "10px"
+    },
+    {
+      "name": "--typography-utility-topic-line-height",
+      "value": "100%"
+    },
+    {
+      "name": "--typography-utility-topic-letter-spacing",
+      "value": "0.4px"
+    },
+    {
+      "name": "--typography-utility-topic-text-case",
+      "value": "uppercase"
+    },
+    {
+      "name": "--typography-utility-s-font-family",
+      "value": "Inter"
+    },
+    {
+      "name": "--typography-utility-s-font-weight",
+      "value": "400"
+    },
+    {
+      "name": "--typography-utility-s-line-height",
+      "value": "150%"
+    },
+    {
+      "name": "--typography-utility-s-font-size",
+      "value": "12px"
+    },
+    {
+      "name": "--typography-utility-s-letter-spacing",
+      "value": "0.3px"
+    },
+    {
+      "name": "--typography-utility-m-bold-line-height",
+      "value": "140%"
+    },
+    {
+      "name": "--typography-utility-m-bold-font-size",
+      "value": "14px"
+    },
+    {
+      "name": "--typography-utility-m-bold-font-family",
+      "value": "Sharp Grotesk Medium"
+    },
+    {
+      "name": "--typography-utility-m-bold-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-utility-m-bold-letter-spacing",
+      "value": "0.25px"
+    },
+    {
+      "name": "--typography-utility-m-line-height",
+      "value": "150%"
+    },
+    {
+      "name": "--typography-utility-m-font-size",
+      "value": "14px"
+    },
+    {
+      "name": "--typography-utility-m-font-family",
+      "value": "Sharp Grotesk Book"
+    },
+    {
+      "name": "--typography-utility-m-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-utility-button-s-font-family",
+      "value": "Sharp Grotesk Book"
+    },
+    {
+      "name": "--typography-utility-button-s-font-size",
+      "value": "12px"
+    },
+    {
+      "name": "--typography-utility-button-s-letter-spacing",
+      "value": "0.3px"
+    },
+    {
+      "name": "--typography-utility-button-s-line-height",
+      "value": "16px"
+    },
+    {
+      "name": "--typography-utility-button-s-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-utility-button-l-font-family",
+      "value": "Sharp Grotesk Book"
+    },
+    {
+      "name": "--typography-utility-button-l-font-size",
+      "value": "14px"
+    },
+    {
+      "name": "--typography-utility-button-l-letter-spacing",
+      "value": "0.1px"
+    },
+    {
+      "name": "--typography-utility-button-l-line-height",
+      "value": "16px"
+    },
+    {
+      "name": "--typography-utility-button-l-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-utility-l-font-family",
+      "value": "Sharp Grotesk Book"
+    },
+    {
+      "name": "--typography-utility-l-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-utility-l-line-height",
+      "value": "150%"
+    },
+    {
+      "name": "--typography-utility-l-font-size",
+      "value": "16px"
+    },
+    {
+      "name": "--typography-utility-l-bold-font-family",
+      "value": "Sharp Grotesk Medium"
+    },
+    {
+      "name": "--typography-utility-l-bold-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-utility-l-bold-line-height",
+      "value": "150%"
+    },
+    {
+      "name": "--typography-utility-l-bold-font-size",
+      "value": "16px"
+    },
+    {
+      "name": "--typography-utility-xl-bold-font-family",
+      "value": "Sharp Grotesk Medium"
+    },
+    {
+      "name": "--typography-utility-xl-bold-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-utility-xl-bold-line-height",
+      "value": "100%"
+    },
+    {
+      "name": "--typography-utility-xl-bold-font-size",
+      "value": "24px"
+    },
+    {
+      "name": "--typography-utility-xl-font-family",
+      "value": "Sharp Grotesk Book"
+    },
+    {
+      "name": "--typography-utility-xl-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-utility-xl-line-height",
+      "value": "100%"
+    },
+    {
+      "name": "--typography-utility-xl-font-size",
+      "value": "24px"
+    },
+    {
+      "name": "--typography-utility-subhead-min-line-height",
+      "value": "130%"
+    },
+    {
+      "name": "--typography-utility-subhead-min-font-size",
+      "value": "20px"
+    },
+    {
+      "name": "--typography-utility-subhead-min-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-utility-subhead-min-font-family",
+      "value": "Sharp Grotesk Medium"
+    },
+    {
+      "name": "--typography-utility-subhead-max-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-utility-subhead-max-line-height",
+      "value": "130%"
+    },
+    {
+      "name": "--typography-utility-subhead-max-font-size",
+      "value": "24px"
+    },
+    {
+      "name": "--typography-utility-subhead-max-font-family",
+      "value": "Sharp Grotesk Medium"
+    },
+    {
+      "name": "--typography-card-default-font-family",
+      "value": "Sharp Grotesk Book"
+    },
+    {
+      "name": "--typography-card-default-font-size",
+      "value": "32px"
+    },
+    {
+      "name": "--typography-card-default-letter-spacing",
+      "value": "0.3px"
+    },
+    {
+      "name": "--typography-card-default-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-card-default-line-height",
+      "value": "106%"
+    },
+    {
+      "name": "--typography-card-large-font-size",
+      "value": "48px"
+    },
+    {
+      "name": "--typography-card-large-font-weight",
+      "value": "23"
+    },
+    {
+      "name": "--typography-card-large-font-family",
+      "value": "Sharp Grotesk Semibold"
+    },
+    {
+      "name": "--typography-card-large-line-height",
+      "value": "106%"
+    },
+    {
+      "name": "--typography-card-small-font-size",
+      "value": "20px"
+    },
+    {
+      "name": "--typography-card-small-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-card-small-font-family",
+      "value": "Sharp Grotesk Medium"
+    },
+    {
+      "name": "--typography-card-small-line-height",
+      "value": "106%"
+    },
+    {
+      "name": "--typography-card-opinion-font-size",
+      "value": "56px"
+    },
+    {
+      "name": "--typography-card-opinion-font-weight",
+      "value": "500"
+    },
+    {
+      "name": "--typography-card-opinion-font-family",
+      "value": "Ivar Headline"
+    },
+    {
+      "name": "--typography-card-opinion-line-height",
+      "value": "106%"
+    },
+    {
+      "name": "--typography-header-sub-brand-min-font-family",
+      "value": "Sharp Grotesk Book"
+    },
+    {
+      "name": "--typography-header-sub-brand-min-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-header-sub-brand-min-line-height",
+      "value": "100%"
+    },
+    {
+      "name": "--typography-header-sub-brand-min-font-size",
+      "value": "28px"
+    },
+    {
+      "name": "--typography-header-sub-brand-min-letter-spacing",
+      "value": "-0.4px"
+    },
+    {
+      "name": "--typography-header-sub-brand-max-font-family",
+      "value": "Sharp Grotesk Book"
+    },
+    {
+      "name": "--typography-header-sub-brand-max-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-header-sub-brand-max-line-height",
+      "value": "100%"
+    },
+    {
+      "name": "--typography-header-sub-brand-max-font-size",
+      "value": "38px"
+    },
+    {
+      "name": "--typography-header-sub-brand-max-letter-spacing",
+      "value": "-0.4px"
+    },
+    {
+      "name": "--typography-mostread-title-max-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-mostread-title-max-font-size",
+      "value": "14px"
+    },
+    {
+      "name": "--typography-mostread-title-max-line-height",
+      "value": "140%"
+    },
+    {
+      "name": "--typography-mostread-title-max-font-family",
+      "value": "Sharp Grotesk Book"
+    },
+    {
+      "name": "--typography-mostread-title-min-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-mostread-title-min-font-size",
+      "value": "14px"
+    },
+    {
+      "name": "--typography-mostread-title-min-line-height",
+      "value": "150%"
+    },
+    {
+      "name": "--typography-mostread-title-min-font-family",
+      "value": "Sharp Grotesk Book"
+    },
+    {
+      "name": "--typography-mostread-number-max-font-family",
+      "value": "Ivar Headline"
+    },
+    {
+      "name": "--typography-mostread-number-max-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-mostread-number-max-font-size",
+      "value": "40px"
+    },
+    {
+      "name": "--typography-mostread-number-max-line-height",
+      "value": "100%"
+    },
+    {
+      "name": "--typography-mostread-number-min-font-family",
+      "value": "Ivar Headline"
+    },
+    {
+      "name": "--typography-mostread-number-min-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-mostread-number-min-font-size",
+      "value": "40px"
+    },
+    {
+      "name": "--typography-mostread-number-min-line-height",
+      "value": "100%"
+    },
+    {
+      "name": "--typography-mostread-heading-max-font-family",
+      "value": "Sharp Grotesk Medium"
+    },
+    {
+      "name": "--typography-mostread-heading-max-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-mostread-heading-max-line-height",
+      "value": "100%"
+    },
+    {
+      "name": "--typography-mostread-heading-max-letter-spacing",
+      "value": "0%"
+    },
+    {
+      "name": "--typography-mostread-heading-max-font-size",
+      "value": "24px"
+    },
+    {
+      "name": "--typography-mostread-heading-min-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-mostread-heading-min-font-size",
+      "value": "20px"
+    },
+    {
+      "name": "--typography-mostread-heading-min-line-height",
+      "value": "130%"
+    },
+    {
+      "name": "--typography-mostread-heading-min-letter-spacing",
+      "value": "0%"
+    },
+    {
+      "name": "--typography-mostread-heading-min-font-family",
+      "value": "Sharp Grotesk Medium"
+    },
+    {
+      "name": "--typography-heading-commercial-h1-min-font-family",
+      "value": "Ivar Display"
+    },
+    {
+      "name": "--typography-heading-commercial-h1-min-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-heading-commercial-h1-min-font-size",
+      "value": "40px"
+    },
+    {
+      "name": "--typography-heading-commercial-h1-min-line-height",
+      "value": "105%"
+    },
+    {
+      "name": "--typography-heading-commercial-h1-min-letter-spacing",
+      "value": "0"
+    },
+    {
+      "name": "--typography-heading-commercial-h1-max-font-family",
+      "value": "Ivar Display"
+    },
+    {
+      "name": "--typography-heading-commercial-h1-max-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-heading-commercial-h1-max-font-size",
+      "value": "72px"
+    },
+    {
+      "name": "--typography-heading-commercial-h1-max-line-height",
+      "value": "105%"
+    },
+    {
+      "name": "--typography-heading-commercial-h1-max-letter-spacing",
+      "value": "0"
+    },
+    {
+      "name": "--typography-heading-commercial-h2-min-font-family",
+      "value": "Ivar Display"
+    },
+    {
+      "name": "--typography-heading-commercial-h2-min-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-heading-commercial-h2-min-font-size",
+      "value": "32px"
+    },
+    {
+      "name": "--typography-heading-commercial-h2-min-line-height",
+      "value": "105%"
+    },
+    {
+      "name": "--typography-heading-commercial-h2-min-letter-spacing",
+      "value": "0"
+    },
+    {
+      "name": "--typography-heading-commercial-h2-max-font-family",
+      "value": "Ivar Display"
+    },
+    {
+      "name": "--typography-heading-commercial-h2-max-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-heading-commercial-h2-max-font-size",
+      "value": "56px"
+    },
+    {
+      "name": "--typography-heading-commercial-h2-max-line-height",
+      "value": "105%"
+    },
+    {
+      "name": "--typography-heading-commercial-h2-max-letter-spacing",
+      "value": "0"
+    },
+    {
+      "name": "--typography-heading-commercial-h3-min-font-family",
+      "value": "Ivar Display"
+    },
+    {
+      "name": "--typography-heading-commercial-h3-min-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-heading-commercial-h3-min-font-size",
+      "value": "24px"
+    },
+    {
+      "name": "--typography-heading-commercial-h3-min-line-height",
+      "value": "105%"
+    },
+    {
+      "name": "--typography-heading-commercial-h3-min-letter-spacing",
+      "value": "0"
+    },
+    {
+      "name": "--typography-heading-commercial-h3-max-font-family",
+      "value": "Ivar Display"
+    },
+    {
+      "name": "--typography-heading-commercial-h3-max-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-heading-commercial-h3-max-font-size",
+      "value": "48px"
+    },
+    {
+      "name": "--typography-heading-commercial-h3-max-line-height",
+      "value": "105%"
+    },
+    {
+      "name": "--typography-heading-commercial-h3-max-letter-spacing",
+      "value": "0"
+    },
+    {
+      "name": "--typography-heading-commercial-h4-min-font-family",
+      "value": "Ivar Display"
+    },
+    {
+      "name": "--typography-heading-commercial-h4-min-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-heading-commercial-h4-min-font-size",
+      "value": "14px"
+    },
+    {
+      "name": "--typography-heading-commercial-h4-min-line-height",
+      "value": "105%"
+    },
+    {
+      "name": "--typography-heading-commercial-h4-min-letter-spacing",
+      "value": "0"
+    },
+    {
+      "name": "--typography-heading-commercial-h4-max-font-family",
+      "value": "Ivar Display"
+    },
+    {
+      "name": "--typography-heading-commercial-h4-max-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-heading-commercial-h4-max-font-size",
+      "value": "32px"
+    },
+    {
+      "name": "--typography-heading-commercial-h4-max-line-height",
+      "value": "105%"
+    },
+    {
+      "name": "--typography-heading-commercial-h4-max-letter-spacing",
+      "value": "0"
+    },
+    {
+      "name": "--typography-heading-commercial-h5-min-font-family",
+      "value": "Ivar Display"
+    },
+    {
+      "name": "--typography-heading-commercial-h5-min-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-heading-commercial-h5-min-font-size",
+      "value": "14px"
+    },
+    {
+      "name": "--typography-heading-commercial-h5-min-line-height",
+      "value": "105%"
+    },
+    {
+      "name": "--typography-heading-commercial-h5-min-letter-spacing",
+      "value": "0"
+    },
+    {
+      "name": "--typography-heading-commercial-h5-max-font-family",
+      "value": "Ivar Display"
+    },
+    {
+      "name": "--typography-heading-commercial-h5-max-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-heading-commercial-h5-max-font-size",
+      "value": "24px"
+    },
+    {
+      "name": "--typography-heading-commercial-h5-max-line-height",
+      "value": "105%"
+    },
+    {
+      "name": "--typography-heading-commercial-h5-max-letter-spacing",
+      "value": "0"
+    },
+    {
+      "name": "--typography-heading-commercial-h6-min-font-family",
+      "value": "Ivar Display"
+    },
+    {
+      "name": "--typography-heading-commercial-h6-min-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-heading-commercial-h6-min-font-size",
+      "value": "12px"
+    },
+    {
+      "name": "--typography-heading-commercial-h6-min-line-height",
+      "value": "105%"
+    },
+    {
+      "name": "--typography-heading-commercial-h6-min-letter-spacing",
+      "value": "0"
+    },
+    {
+      "name": "--typography-heading-commercial-h6-max-font-family",
+      "value": "Ivar Display"
+    },
+    {
+      "name": "--typography-heading-commercial-h6-max-font-weight",
+      "value": "21"
+    },
+    {
+      "name": "--typography-heading-commercial-h6-max-font-size",
+      "value": "24"
+    },
+    {
+      "name": "--typography-heading-commercial-h6-max-line-height",
+      "value": "105%"
+    },
+    {
+      "name": "--typography-heading-commercial-h6-max-letter-spacing",
+      "value": "0"
+    },
+    {
+      "name": "--spacing-row-gap-min",
+      "value": "16px"
+    },
+    {
+      "name": "--spacing-row-gap-max",
+      "value": "24px"
+    },
+    {
+      "name": "--border-radius-max",
+      "value": "999px"
+    },
+    {
+      "name": "--border-radius-topic",
+      "value": "99999px"
+    },
+    {
+      "name": "--border-radius-button",
+      "value": "4px"
+    },
+    {
+      "name": "--border-radius-default-min",
+      "value": "2px"
+    },
+    {
+      "name": "--border-radius-default-max",
+      "value": "2px"
+    },
+    {
+      "name": "--border-radius-teaser-min",
+      "value": "2px"
+    },
+    {
+      "name": "--border-radius-teaser-max",
+      "value": "2px"
+    },
+    {
+      "name": "--fontweight-bold",
+      "value": "23"
+    },
+    {
+      "name": "--fontweight-semibold",
+      "value": "23"
+    },
+    {
+      "name": "--fontweight-medium",
+      "value": "21"
+    },
+    {
+      "name": "--fontweight-regular",
+      "value": "21"
+    },
+    {
+      "name": "--logo-footer-min",
+      "value": "285px"
+    },
+    {
+      "name": "--logo-footer-max",
+      "value": "458px"
+    },
+    {
+      "name": "--logo-header-min",
+      "value": "45px"
+    },
+    {
+      "name": "--logo-header-max",
+      "value": "60px"
+    },
+    {
+      "name": "--logo-frontpageheader-min",
+      "value": "45px"
+    },
+    {
+      "name": "--logo-frontpageheader-max",
+      "value": "417px"
+    }
+  ]
+}

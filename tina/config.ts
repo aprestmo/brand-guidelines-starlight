@@ -1,4 +1,5 @@
 import { defineConfig } from "tinacms";
+import { colorTokensEmbedTemplate } from "./templates/colorTokensEmbed";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch =
@@ -62,6 +63,7 @@ export default defineConfig({
             name: "body",
             label: "Content",
             isBody: true,
+            templates: [colorTokensEmbedTemplate],
           },
         ],
         ui: {
