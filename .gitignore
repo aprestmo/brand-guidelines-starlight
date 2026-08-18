@@ -22,3 +22,11 @@ pnpm-debug.log*
 # TinaCMS build artifacts
 public/admin/
 tina/__generated__/
+
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log

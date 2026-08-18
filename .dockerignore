@@ -1,0 +1,13 @@
+.git
+.github
+.astro
+dist
+tina/__generated__
+public/admin
+infra
+node_modules
+.env
+.env.*
+*.log
+*.tfstate
+*.tfstate.*

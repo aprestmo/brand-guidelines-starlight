@@ -4,11 +4,16 @@ import node from '@astrojs/node';
 import starlight from '@astrojs/starlight';
 import tina from '@tinacms/astro/integration';
 import { tinaAdminDevRedirect } from '@tinacms/astro/vite';
+const tinaEnabled = process.env.TINA_ENABLED === 'true';
 
 // https://astro.build/config
 export default defineConfig({
 	output: 'server',
-  adapter: node({ mode: 'standalone' }),
+	adapter: node({ mode: 'standalone' }),
+	server: {
+		host: true,
+		port: Number(process.env.PORT) || 4321,
+	},
 	integrations: [
 		starlight({
       title: 'Brand Guidelines',
@@ -18,9 +23,11 @@ export default defineConfig({
           lang: 'nb-NO',
         }
       },
-			components: {
-				MarkdownContent: './src/components/tina/MarkdownContent.astro',
-			},
+			components: tinaEnabled
+				? {
+						MarkdownContent: './src/components/tina/MarkdownContent.astro',
+					}
+				: undefined,
 			sidebar: [
 				{
 					label: 'Merkevaremanual',
@@ -40,12 +47,19 @@ export default defineConfig({
 				},
 			],
 		}),
-		tina(),
+		...(tinaEnabled ? [tina()] : []),
 	],
 	vite: {
-		plugins: [tinaAdminDevRedirect()],
-		ssr: {
-			noExternal: ['@tinacms/astro', '@tinacms/bridge'],
+		define: {
+			__TINA_ENABLED__: JSON.stringify(tinaEnabled),
 		},
+		...(tinaEnabled
+			? {
+					plugins: [tinaAdminDevRedirect()],
+					ssr: {
+						noExternal: ['@tinacms/astro', '@tinacms/bridge'],
+					},
+				}
+			: {}),
 	},
 });

@@ -3,10 +3,10 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "tinacms dev -c \"astro dev\"",
-    "start": "astro dev",
-    "build": "pnpm run fetch-tokens && tinacms build --local --skip-cloud-checks -c \"astro build\"",
-    "build:cloud": "pnpm run fetch-tokens && tinacms build && astro build",
+    "dev": "TINA_ENABLED=true tinacms dev -c \"astro dev\"",
+    "start": "node ./dist/server/entry.mjs",
+    "build": "pnpm run fetch-tokens && astro build",
+    "build:cloud": "pnpm run fetch-tokens && TINA_ENABLED=true tinacms build && TINA_ENABLED=true astro build",
     "fetch-tokens": "node scripts/fetch-tokens.mjs",
     "preview": "astro preview",
     "astro": "astro"

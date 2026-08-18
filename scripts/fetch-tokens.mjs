@@ -7,8 +7,19 @@
 
 const TOKENS_URL = "https://pages.dngroup.tech/css/theme/dn/tokens.css";
 const OUT_PATH = new URL("../src/data/parsedTokens.json", import.meta.url);
+const FETCH_TIMEOUT_MS = 30_000;
 
-const response = await fetch(TOKENS_URL);
+let response;
+try {
+	response = await fetch(TOKENS_URL, { signal: AbortSignal.timeout(FETCH_TIMEOUT_MS) });
+} catch (error) {
+	if (error.name === "TimeoutError") {
+		throw new Error(`Fetch timed out after ${FETCH_TIMEOUT_MS / 1000}s: ${TOKENS_URL}`, {
+			cause: error,
+		});
+	}
+	throw error;
+}
 if (!response.ok) throw new Error(`Fetch failed: ${response.status} ${response.statusText}`);
 const css = await response.text();
 
