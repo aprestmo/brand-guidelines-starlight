@@ -111,7 +111,9 @@ data "aws_iam_policy_document" "github_deploy_assume_role" {
     condition {
       test     = "StringEquals"
       variable = "token.actions.githubusercontent.com:sub"
-      values   = ["repo:${var.github_repository}:ref:refs/heads/main"]
+      values = [
+        "repo:aprestmo@3515907/brand-guidelines-starlight@1333118728:environment:production",
+      ]
     }
   }
 }
