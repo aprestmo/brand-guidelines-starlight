@@ -202,6 +202,7 @@ data "aws_iam_policy_document" "github_deploy" {
       "iam:DeleteRolePolicy",
       "iam:GetRole",
       "iam:GetRolePolicy",
+      "iam:ListAttachedRolePolicies",
       "iam:ListRolePolicies",
       "iam:PutRolePolicy",
       "iam:TagRole",
