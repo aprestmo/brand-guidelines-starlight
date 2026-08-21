@@ -142,6 +142,7 @@ data "aws_iam_policy_document" "github_deploy" {
       "ecr:DescribeRepositories",
       "ecr:GetDownloadUrlForLayer",
       "ecr:GetLifecyclePolicy",
+      "ecr:GetRepositoryPolicy",
       "ecr:InitiateLayerUpload",
       "ecr:ListImages",
       "ecr:ListTagsForResource",
