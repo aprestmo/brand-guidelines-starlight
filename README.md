@@ -95,7 +95,7 @@ Create these repository **variables** before pushing to `main`:
 - `PROJECT_NAME` — `brand-guidelines`, unless the Terraform value was changed.
 - `ECR_REPOSITORY` — the ECR repository name; it must equal `PROJECT_NAME`.
 - `AWS_DEPLOY_ROLE_ARN` — the Terraform `github_deploy_role_arn` output.
-- `GITHUB_OIDC_PROVIDER_ARN` — the provider ARN used in
+- `AWS_GITHUB_OIDC_PROVIDER_ARN` — the provider ARN used in
   `github_oidc_provider_arn`.
 
 The workflow builds the image, pushes `sha-<commit SHA>` to ECR, and applies the
