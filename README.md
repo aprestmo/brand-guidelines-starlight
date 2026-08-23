@@ -45,7 +45,8 @@ Lightsail serves the application over its managed HTTPS URL.
 
 TinaCloud builds the static `/admin/` application alongside the SSR site. The
 read-only content token is mounted only during the Docker build and is not
-present in the runtime image.
+exposed through Docker history or runtime environment variables; Tina's
+generated server client retains it for SSR content queries.
 
 ### TinaCloud production setup
 
