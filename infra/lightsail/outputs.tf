@@ -15,5 +15,8 @@ output "github_deploy_role_arn" {
 
 output "deployed_image_tag" {
   description = "The image tag requested through Terraform, or null before the first deployment."
-  value       = one(aws_lightsail_container_service_deployment_version.app[*].container[0].image)
+  value = one([
+    for deployment in aws_lightsail_container_service_deployment_version.app :
+    one(deployment.container).image
+  ])
 }

@@ -20,6 +20,7 @@ concurrency:
 
 env:
   AWS_REGION: ${{ vars.AWS_REGION }}
+  TF_STATE_REGION: ${{ vars.TF_STATE_REGION }}
   ECR_REPOSITORY: ${{ vars.ECR_REPOSITORY }}
   TF_VAR_aws_region: ${{ vars.AWS_REGION }}
   TF_VAR_github_oidc_provider_arn: ${{ vars.AWS_GITHUB_OIDC_PROVIDER_ARN }}
@@ -75,7 +76,7 @@ jobs:
         run: |
           terraform init \
             -backend-config="bucket=${TF_VAR_terraform_state_bucket}" \
-            -backend-config="region=${AWS_REGION}"
+            -backend-config="region=${TF_STATE_REGION}"
 
       - name: Validate Terraform
         working-directory: infra/lightsail

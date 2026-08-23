@@ -1,0 +1,14 @@
+---
+description: Require explicit target-account selection for AWS deployments
+alwaysApply: true
+---
+
+# AWS Deployment Account
+
+Before performing any AWS deployment or AWS resource mutation, ask the user
+which AWS account ID to use.
+
+- Do not infer the target account from the active AWS profile, Terraform state,
+  existing infrastructure, or previous deployments.
+- Confirm the selected account with `aws sts get-caller-identity` before making
+  changes.

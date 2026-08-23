@@ -92,6 +92,7 @@ Create these repository **variables** before pushing to `main`:
 
 - `AWS_REGION` — the same region used by Terraform.
 - `TF_STATE_BUCKET` — the bootstrap state bucket name.
+- `TF_STATE_REGION` — the region containing the Terraform state bucket.
 - `PROJECT_NAME` — `brand-guidelines`, unless the Terraform value was changed.
 - `ECR_REPOSITORY` — the ECR repository name; it must equal `PROJECT_NAME`.
 - `AWS_DEPLOY_ROLE_ARN` — the Terraform `github_deploy_role_arn` output.
