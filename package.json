@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "tinacms dev -c \"astro dev\"",
     "start": "node ./dist/server/entry.mjs",
-    "build": "pnpm run fetch-tokens && tinacms build --content=local -c \"astro build\"",
+    "build": "pnpm run fetch-tokens && tinacms build -c \"astro build\"",
     "build:local": "pnpm run fetch-tokens && tinacms build --local --skip-cloud-checks -c \"astro build\"",
     "fetch-tokens": "node scripts/fetch-tokens.mjs",
     "preview": "astro preview",
