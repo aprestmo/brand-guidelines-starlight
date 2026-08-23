@@ -4,10 +4,10 @@ import node from '@astrojs/node';
 import starlight from '@astrojs/starlight';
 import tina from '@tinacms/astro/integration';
 import { tinaAdminDevRedirect } from '@tinacms/astro/vite';
-const tinaEnabled = process.env.TINA_ENABLED === 'true';
 
 // https://astro.build/config
 export default defineConfig({
+	site: process.env.SITE_URL || 'http://localhost:4321',
 	output: 'server',
 	adapter: node({ mode: 'standalone' }),
 	server: {
@@ -23,11 +23,9 @@ export default defineConfig({
           lang: 'nb-NO',
         }
       },
-			components: tinaEnabled
-				? {
-						MarkdownContent: './src/components/tina/MarkdownContent.astro',
-					}
-				: undefined,
+			components: {
+				MarkdownContent: './src/components/tina/MarkdownContent.astro',
+			},
 			sidebar: [
 				{
 					label: 'Merkevaremanual',
@@ -47,19 +45,12 @@ export default defineConfig({
 				},
 			],
 		}),
-		...(tinaEnabled ? [tina()] : []),
+		tina(),
 	],
 	vite: {
-		define: {
-			__TINA_ENABLED__: JSON.stringify(tinaEnabled),
+		plugins: [tinaAdminDevRedirect()],
+		ssr: {
+			noExternal: ['@tinacms/astro', '@tinacms/bridge'],
 		},
-		...(tinaEnabled
-			? {
-					plugins: [tinaAdminDevRedirect()],
-					ssr: {
-						noExternal: ['@tinacms/astro', '@tinacms/bridge'],
-					},
-				}
-			: {}),
 	},
 });

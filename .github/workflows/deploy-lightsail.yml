@@ -61,9 +61,19 @@ jobs:
       - name: Build and push image
         if: github.event_name != 'workflow_dispatch' || inputs.image_tag == ''
         uses: docker/build-push-action@v6
+        env:
+          TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
         with:
           context: .
           push: true
+          platforms: linux/amd64
+          provenance: false
+          build-args: |
+            PUBLIC_TINA_CLIENT_ID=${{ vars.PUBLIC_TINA_CLIENT_ID }}
+            TINA_BRANCH=${{ github.ref_name }}
+            SITE_URL=${{ vars.SITE_URL }}
+          secret-envs: |
+            tina_token=TINA_TOKEN
           tags: ${{ steps.ecr-login.outputs.registry }}/${{ env.ECR_REPOSITORY }}:${{ steps.image.outputs.tag }}
 
       - name: Set up Terraform

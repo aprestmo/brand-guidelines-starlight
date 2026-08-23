@@ -20,9 +20,9 @@ pnpm dev
 
 Open `http://localhost:4321/admin/` to edit content. Saving updates the Markdown or MDX source file; regular documentation bodies also update in the Tina preview.
 
-TinaCMS generates `tina/__generated__/` and `public/admin/`; neither directory is committed. `pnpm build` renders the Markdown and MDX source directly with Astro, without a TinaCMS server or TinaCloud credentials.
+TinaCMS generates `tina/__generated__/` and `public/admin/`; neither directory is committed. `tina/tina-lock.json` is committed so TinaCloud can index the schema.
 
-For a TinaCloud deployment, provide `NEXT_PUBLIC_TINA_CLIENT_ID` and `TINA_TOKEN` and run `pnpm build:cloud`.
+`pnpm build` uses TinaCloud and requires `PUBLIC_TINA_CLIENT_ID` plus `TINA_TOKEN`. Use `pnpm build:local` for an offline build without TinaCloud credentials.
 
 ## Commands
 
@@ -30,8 +30,8 @@ For a TinaCloud deployment, provide `NEXT_PUBLIC_TINA_CLIENT_ID` and `TINA_TOKEN
 | :------------------------ | :----------------------------------------------- |
 | `pnpm install`             | Installs dependencies                            |
 | `pnpm dev`             | Starts TinaCMS and Astro at `localhost:4321`     |
-| `pnpm build`           | Builds the public production site without TinaCMS |
-| `pnpm build:cloud`     | Builds against TinaCloud for deployment          |
+| `pnpm build`           | Builds the TinaCloud-enabled production site |
+| `pnpm build:local`     | Builds locally without TinaCloud credentials |
 | `pnpm preview`         | Preview your build locally, before deploying     |
 | `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `pnpm astro -- --help` | Get help using the Astro CLI                     |
@@ -43,9 +43,24 @@ Container Service. Terraform provisions the service, a private ECR repository, a
 GitHub Actions deployment role. Images are tagged with an immutable commit SHA, and
 Lightsail serves the application over its managed HTTPS URL.
 
-The first release uses the credential-free `pnpm build` path without TinaCMS.
-TinaCloud credentials and a production authoring workflow are not configured, so
-`/admin/` is unavailable in production until that work is explicitly added.
+TinaCloud builds the static `/admin/` application alongside the SSR site. The
+read-only content token is mounted only during the Docker build and is not
+present in the runtime image.
+
+### TinaCloud production setup
+
+Create a TinaCloud project for this repository on the `main` branch. Add both
+`http://localhost:4321` and the production site origin as allowed site URLs.
+Create these GitHub `production` environment settings:
+
+- Variable: `PUBLIC_TINA_CLIENT_ID`
+- Variable: `SITE_URL`
+- Secret: `TINA_TOKEN`
+
+The deployment workflow passes the public values as build arguments and mounts
+the token with BuildKit only for `tinacms build`. After deployment, open
+`/admin/`, authenticate with TinaCloud, and save edits to commit content to
+GitHub; the `main` push automatically redeploys the site.
 
 ### Prerequisites
 

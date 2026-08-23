@@ -3,8 +3,12 @@ import { colorTokensEmbedTemplate } from "./templates/colorTokensEmbed";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch =
+  process.env.TINA_BRANCH ||
+  process.env.GITHUB_REF_NAME ||
   process.env.GITHUB_BRANCH ||
   process.env.VERCEL_GIT_COMMIT_REF ||
+  process.env.WORKERS_CI_BRANCH ||
+  process.env.CF_PAGES_BRANCH ||
   process.env.HEAD ||
   "main";
 
@@ -12,7 +16,7 @@ export default defineConfig({
   branch,
 
   // Get this from tina.io
-  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
+  clientId: process.env.PUBLIC_TINA_CLIENT_ID,
   // Get this from tina.io
   token: process.env.TINA_TOKEN,
 
