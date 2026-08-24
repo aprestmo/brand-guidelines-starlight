@@ -22,7 +22,7 @@ Open `http://localhost:4321/admin/` to edit content. Saving updates the Markdown
 
 TinaCMS generates `tina/__generated__/` and `public/admin/`; neither directory is committed. `tina/tina-lock.json` is committed so TinaCloud can index the schema.
 
-`pnpm build` uses TinaCloud and requires `PUBLIC_TINA_CLIENT_ID` plus `TINA_TOKEN`. Use `pnpm build:local` for an offline build without TinaCloud credentials.
+`pnpm build` uses TinaCloud and requires `NEXT_PUBLIC_TINA_CLIENT_ID` plus `TINA_TOKEN`. Use `pnpm build:local` for an offline build without TinaCloud credentials.
 
 ## Commands
 
@@ -54,7 +54,7 @@ Create a TinaCloud project for this repository on the `main` branch. Add both
 `http://localhost:4321` and the production site origin as allowed site URLs.
 Create these GitHub `production` environment settings:
 
-- Variable: `PUBLIC_TINA_CLIENT_ID`
+- Variable: `NEXT_PUBLIC_TINA_CLIENT_ID`
 - Variable: `SITE_URL`
 - Secret: `TINA_TOKEN`
 
