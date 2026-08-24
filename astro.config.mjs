@@ -50,7 +50,10 @@ export default defineConfig({
 	vite: {
 		plugins: [tinaAdminDevRedirect()],
 		ssr: {
-			noExternal: ['@tinacms/astro', '@tinacms/bridge'],
+			// Docker runtime ships only `dist/` (no node_modules). Bundle Tina
+			// packages so `/tina-island/*` can resolve `tinacms/dist/client`
+			// without a runtime dependency install.
+			noExternal: ['@tinacms/astro', '@tinacms/bridge', 'tinacms'],
 		},
 	},
 });
