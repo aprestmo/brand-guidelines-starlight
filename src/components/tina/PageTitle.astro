@@ -1,0 +1,26 @@
+---
+import Default from '@astrojs/starlight/components/PageTitle.astro';
+import TinaIsland from '@tinacms/astro/TinaIsland.astro';
+import DocTitle from './DocTitle.astro';
+import { getDoc } from '../../lib/tina/data';
+import { islands } from '../../lib/tina/islands';
+
+const { entry } = Astro.locals.starlightRoute;
+const hasEditableDocument = entry.id !== '' && entry.id !== '404';
+const document = hasEditableDocument ? await getDoc(entry.id) : undefined;
+const data = document?.data?.doc;
+
+// #region agent log
+fetch('http://127.0.0.1:7625/ingest/679c984d-a08c-479d-aa2b-e4907b8ad5ba',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'f1bf7a'},body:JSON.stringify({sessionId:'f1bf7a',runId:'title-fix',hypothesisId:'A',location:'src/components/tina/PageTitle.astro',message:'PageTitle render source',data:{entryId:entry.id,starlightTitle:entry.data?.title ?? null,tinaTitle:data?.title ?? null,usingTinaIsland:Boolean(data)},timestamp:Date.now()})}).catch(()=>{});
+// #endregion
+---
+
+{
+	data ? (
+		<TinaIsland name="docTitle" wrapper={islands.docTitle.wrapper} params={{ slug: entry.id }}>
+			<DocTitle data={data} />
+		</TinaIsland>
+	) : (
+		<Default />
+	)
+}

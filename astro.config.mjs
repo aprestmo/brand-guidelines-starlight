@@ -25,6 +25,7 @@ export default defineConfig({
       },
 			components: {
 				MarkdownContent: './src/components/tina/MarkdownContent.astro',
+				PageTitle: './src/components/tina/PageTitle.astro',
 			},
 			sidebar: [
 				{
