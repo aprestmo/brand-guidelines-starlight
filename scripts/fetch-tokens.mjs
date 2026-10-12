@@ -5,7 +5,7 @@
  * Usage: node scripts/fetch-tokens.mjs
  */
 
-const TOKENS_URL = "https://pages.dngroup.tech/css/theme/dn/tokens.css";
+const TOKENS_URL = "https://stc.dngroup.com/design-system-universal/css/0.7.38/theme/dn/tokens.css";
 const OUT_PATH = new URL("../src/data/parsedTokens.json", import.meta.url);
 const FETCH_TIMEOUT_MS = 30_000;
 

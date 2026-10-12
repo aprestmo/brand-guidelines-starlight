@@ -3,7 +3,7 @@
  * Speiler logikken i den React-baserte ColorTokensCard (brand-guidelines-prosjektet),
  * portert til rammeverksuavhengig TypeScript for bruk i en vanlig Astro-komponent.
  *
- * Kilde: https://pages.dngroup.tech/css/theme/dn/tokens.css
+ * Kilde: https://stc.dngroup.com/design-system-universal/css/0.7.38/theme/dn/tokens.css
  */
 import parsedTokensJson from "../data/parsedTokens.json";
 
@@ -21,7 +21,7 @@ export const tokensByName: Record<string, string> = Object.fromEntries(
 	bundledTokensList.map((t) => [t.name, t.value]),
 );
 
-const TOKENS_URL = "https://pages.dngroup.tech/css/theme/dn/tokens.css";
+const TOKENS_URL = "https://stc.dngroup.com/design-system-universal/css/0.7.38/theme/dn/tokens.css";
 
 /** Parser rå CSS-tekst fra tokens.css til et navn->verdi-oppslag + genereringsdato. */
 export function parseTokensFromCss(css: string): {
